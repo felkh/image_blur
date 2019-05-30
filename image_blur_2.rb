@@ -29,9 +29,9 @@ class Image
           
           if img_array_index == x_row_num && img_array_item_index == y_col_num
             @image[img_array_index -1][img_array_item_index] = 1 unless img_array_index == 0
-            @image[img_array_index +1][img_array_item_index] = 1 unless img_array_index >= 3
+            @image[img_array_index +1][img_array_item_index] = 1 unless img_array_index >= 4
             @image[img_array_index][img_array_item_index -1] = 1 unless img_array_item_index == 0
-            @image[img_array_index][img_array_item_index +1] = 1 unless img_array_item_index >= 3
+            @image[img_array_index][img_array_item_index +1] = 1 unless img_array_item_index >= 4
            end
         end
       end
